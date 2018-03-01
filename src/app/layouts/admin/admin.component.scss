@@ -1,0 +1,22 @@
+.flex-container{
+  margin: 100px 0 0 0;
+  display: flex;
+  align-content: center;
+}
+
+.flex-container>div {
+  background-color: #aeaeae;
+  width: 300px;
+  padding: 9px;
+  margin:2px;
+  cursor: pointer;
+  text-align: center;
+}
+@media only screen and (max-width:300px) {
+  .flex-container>div {
+    width: auto;
+  }
+}
+.flex-container>div.active{
+  background-color: #f1f1f1;
+}

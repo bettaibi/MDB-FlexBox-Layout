@@ -1,0 +1,17 @@
+<div class="container animated bounceInLeft">
+  <div class="flex-container">
+      <div class=" z-depth-1-half" [ngClass]="{'active': action== 1}">
+        Exemple1
+      </div>
+      <div class="z-depth-1-half"  [ngClass]="{'active': action== 2}">
+        Exemple2
+      </div>
+      <div class="z-depth-1-half"  [ngClass]="{'active': action== 3}">
+        Exemple3
+      </div>
+      <div class="z-depth-1-half"  [ngClass]="{'active': action== 4}">
+       Use keyboard to navigate
+      </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

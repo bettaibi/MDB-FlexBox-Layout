@@ -1,0 +1,71 @@
+<div class="flex-container animated zoomIn">
+    <div class="active z-depth-1-half">
+      <div class="row">
+        <div class="col-sm-6">
+          <div  style="display: block">
+            <h3>Line chart</h3>
+            <canvas mdbChart
+                [chartType]="chartType"
+                [datasets]="chartDatasets"
+                [labels]="chartLabels"
+                [colors]="chartColors"
+                [options]="chartOptions"
+                [legend]="true"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+            </canvas>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div style="display: block">
+          <h3>Bar chart</h3>
+          <canvas mdbChart
+              [chartType]="chartType2"
+              [datasets]="chartDatasets2"
+              [labels]="chartLabels2"
+              [colors]="chartColors2"
+              [options]="chartOptions2"
+              [legend]="true"
+              (chartHover)="chartHovered2($event)"
+              (chartClick)="chartClicked2($event)">
+          </canvas>
+        </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div style="display: block">
+              <canvas mdbChart
+                  [chartType]="chartType3"
+                  [datasets]="chartDatasets"
+                  [labels]="chartLabels"
+                  [colors]="chartColors"
+                  [options]="chartOptions"
+                  [legend]="true"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)">
+              </canvas>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div style="display: block">
+              <canvas mdbChart
+                  [chartType]="chartType3"
+                  [datasets]="chartDatasets"
+                  [labels]="chartLabels"
+                  [colors]="chartColors"
+                  [options]="chartOptions"
+                  [legend]="true"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)">
+              </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
